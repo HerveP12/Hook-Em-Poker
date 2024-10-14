@@ -305,3 +305,12 @@ function resetGame() {
   document.getElementById("result").innerHTML = "";
 }
 
+// Toggle game info visibility
+function toggleGameInfo() {
+  const rulesSection = document.getElementById("rules-and-paytable");
+  if (rulesSection.style.display === "none") {
+    rulesSection.style.display = "block";
+  } else {
+    rulesSection.style.display = "none";
+  }
+}
