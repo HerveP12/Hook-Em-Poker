@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hook 'Em Poker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Hook 'Em Poker</h1>
+
+      <div id="balance-section">
+        <h2>Player Balance: <span id="balance">$10,000</span></h2>
+      </div>
+
+      <!-- Ante Bet Section -->
+      <div id="ante-bet-section">
+        <label for="ante-bet">Place Ante Bet:</label>
+        <input
+          type="number"
+          id="ante-bet"
+          placeholder="Enter Ante Bet"
+          min="1"
+        />
+        <button class="btn-gold" onclick="placeAnte()">Deal Cards</button>
+      </div>
+
+      <!-- Play Bet Section -->
+      <div id="play-bet-section" style="display: none">
+        <label for="play-bet">Place Play Bet (1x to 5x Ante Bet):</label>
+        <input
+          type="number"
+          id="play-bet"
+          placeholder="Enter Play Bet"
+          min="1"
+        />
+        <button class="btn-gold" onclick="placePlayBet()">
+          Place Play Bet
+        </button>
+        <button class="btn-gold" onclick="fold()">Fold</button>
+      </div>
+
+      <!-- Player Cards Section -->
+      <div id="player-cards">
+        <h2>Your Hand:</h2>
+        <div id="player-hand"></div>
+      </div>
+
+      <!-- Community Cards Section -->
+      <div id="community-cards">
+        <h2>Community Cards</h2>
+        <div class="community-box" id="box1-container">
+          <h3>Community Box 1</h3>
+          <div class="community-hand" id="community-box1"></div>
+        </div>
+        <div class="community-box" id="box2-container">
+          <h3>Community Box 2</h3>
+          <div class="community-hand" id="community-box2"></div>
+        </div>
+      </div>
+
+      <!-- Result Section -->
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
