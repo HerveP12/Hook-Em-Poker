@@ -62,6 +62,54 @@
 
       <!-- Result Section -->
       <div id="result"></div>
+
+      <!-- Game Info Button -->
+      <div id="game-info-button">
+        <button class="btn-gold" onclick="toggleGameInfo()">Game Info</button>
+      </div>
+
+      <!-- Rules and Paytable Section (Initially Hidden) -->
+      <div id="rules-and-paytable" style="display: none">
+        <h2>Game Rules</h2>
+        <p>
+          <strong>Overview:</strong> Hook ‘Em Poker is a 5-card poker game
+          played with a standard 52-card deck, giving players two opportunities
+          to form a winning hand. The game is played against a paytable, not
+          against the dealer or other players. Players win if they receive a
+          pair of Jacks or better.
+        </p>
+        <p>
+          <strong>Getting Started:</strong> Place a wager on the ante. Once all
+          wagers are placed, the dealer will give each player 3 cards face down
+          and then will place two cards face down in the first and second
+          community card boxes.
+        </p>
+        <p>
+          <strong>Play or Fold:</strong> After seeing your initial 3 cards,
+          decide to make a play bet wager of 1x to 5x your ante or fold. If you
+          fold, your ante wager is forfeited.
+        </p>
+        <p>
+          <strong>Winning and Losing:</strong> Once the community cards are
+          revealed, bets are settled. You win if your hand combined with either
+          community box forms a pair of Jacks or better (pairs of 6s-10s push).
+          The highest-ranking 5-card hand is used for payouts.
+        </p>
+
+        <h2>Paytable</h2>
+        <ul>
+          <li>Royal Flush: 500 to 1</li>
+          <li>Straight Flush: 150 to 1</li>
+          <li>Four of a Kind: 45 to 1</li>
+          <li>Full House: 15 to 1</li>
+          <li>Flush: 10 to 1</li>
+          <li>Straight: 8 to 1</li>
+          <li>Three of a Kind: 4 to 1</li>
+          <li>Two Pairs: 2 to 1</li>
+          <li>Pair of Jacks or Better: 1 to 1</li>
+          <li>Pair of 6s to 10s: PUSH</li>
+        </ul>
+      </div>
     </div>
 
     <script src="script.js"></script>
